@@ -12,4 +12,5 @@ retrieve.pubmed.searchpage<-function(gene, disease) {
 
 mine.pubmed.num<-function(parsedHTML) {
   resultstr<-xpathSApply(parsedHTML, '//div//h2[@class = "result_count"]', xmlValue)
+  resultstr
 }
